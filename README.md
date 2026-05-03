@@ -8,7 +8,7 @@
 
 The **Fabric Defect Pattern Recognizer** is an end-to-end machine learning system that detects textile defects on conveyor belts in real time. It combines a CNN-based vision model (EfficientNet) with a Retrieval-Augmented Generation (RAG) pipeline to not only classify defects but explain their likely causes — empowering factory operators to act fast and reduce waste.
 
-Designed specifically for Sri Lanka's Western Province apparel exporters (e.g., Brandix, MAS Holdings), the system targets the unique challenges of tropical humidity, knitted fabric dominance, and rare defect imbalances that generic models fail to handle.
+Designed specifically for Sri Lanka's Western Province apparel exporters, the system targets the unique challenges of tropical humidity, knitted fabric dominance, and rare defect imbalances that generic models fail to handle.
 
 ---
 
@@ -202,7 +202,7 @@ python src/detection/train.py --config configs/train_config.yaml
 
 ## 🌏 Local Context
 
-This project is tailored for **Negombo and Western Province apparel factories** — a hub of Sri Lanka's garment export industry. Key adaptations:
+This project is tailored for **apparel factories** — a hub of Sri Lanka's garment export industry. Key adaptations:
 
 - Training data sourced from or augmented to match **local knitted fabric types**
 - **Tropical humidity** factored into preprocessing and augmentation
