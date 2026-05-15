@@ -38,4 +38,4 @@ augmentation:
 
 output:
   checkpoint_dir: models/efficientnet
-  mlflow_experiment: fabric-defect-efficientnet
+  mlflow_experiment: fabric-defect-mobilenetv3

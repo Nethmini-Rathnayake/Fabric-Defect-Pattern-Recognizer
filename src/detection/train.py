@@ -1,4 +1,4 @@
-"""Train EfficientNet-B4 for fabric defect classification."""
+"""Train MobileNetV3-Small for fabric defect classification."""
 
 import argparse
 import yaml
