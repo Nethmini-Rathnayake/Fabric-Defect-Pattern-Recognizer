@@ -1,0 +1,36 @@
+DEFECT: TEAR / HOLE / SNAG
+CATEGORY: Physical fabric damage
+SEVERITY: Critical (immediate line stop required)
+
+--- VISUAL CHARACTERISTICS ---
+Tears present as complete fabric ruptures with frayed or clean edges. Holes appear as enclosed openings in the fabric structure. Snags are pulled loops or yarns that protrude from the surface without full rupture. In knit fabrics, a dropped stitch causes a ladder-run visible as a vertical line of missing loops. Tears range from pinhole defects (<2 mm) to full-width fabric breaks.
+
+--- ROOT CAUSES: KNITTING MACHINE DAMAGE ---
+Damaged or worn knitting needles are the most common cause of tears in jersey and interlock fabrics. The hook end of a latch needle wears after approximately 1–2 million cycles; a bent hook snags passing yarn and causes a hole every revolution. Broken cylinder needles create consistent single-course holes at fixed needle positions. Sinker damage on circular knitting machines creates similar periodic patterns. Diagnosis: count the distance between repeated holes — if it equals the needle cylinder circumference, a single needle is responsible.
+
+--- ROOT CAUSES: WEAVING / LOOM DAMAGE ---
+In woven fabrics, reed wire breakage causes warp threads to crowd together, creating weak zones that tear under tension. Shuttle loom pirn changes that are incorrectly timed leave a loose weft that snags on the next pick. Rapier head damage on rapier looms grips the weft incorrectly, causing weft breaks and resulting holes. Broken drop-wires on the warp stop-motion fail to halt the loom on yarn break, allowing multi-end defects.
+
+--- ROOT CAUSES: YARN QUALITY ---
+Under-twisted or weak yarn (low tenacity count) breaks under normal loom or knitting tension. Target minimum yarn tenacity: ≥12 cN/tex for ring-spun cotton. High yarn tension during unwinding (>0.35 cN/tex) stresses weaker sections past their breaking point. Yarn irregularities (thick-thin places, slubs) create stress concentration points that break at the thin section.
+
+--- ROOT CAUSES: FOREIGN OBJECTS AND HANDLING ---
+Metal fragments from worn machine parts entering the fabric path cause immediate tearing. Improper doffing and roll-handling (sharp edges on transfer trolleys, fabric catching on conveyor guides) cause edge tears. Fabric stretched beyond 3% elongation during finishing creates internal stress that leads to delayed tearing.
+
+--- IMMEDIATE CORRECTIVE ACTIONS ---
+1. Stop the line immediately — continuing production risks further damage and secondary defects.
+2. Identify defect pattern: periodic = single needle/heddle; random = yarn quality or handling.
+3. Knit defect: remove needle cylinder, inspect all needles under magnification. Replace any needle with hook deformation >0.1 mm.
+4. Weave defect: inspect reed for broken wires; check rapier head grip under slow motion.
+5. Quarantine entire roll. Mark defect position with flagging tape. Measure frequency (defects per 100 metres).
+6. Escalate to maintenance engineer if defect rate exceeds 1 per 50 metres.
+
+--- PREVENTIVE MEASURES ---
+- Enforce needle change schedule: every 1.5 million cycles or 6 months for high-speed circular knitting.
+- Fit needle detectors (magnetic or acoustic) that halt the machine on broken needle.
+- Incoming yarn inspection: test tenacity on every lot (minimum 20 samples per cone lot).
+- Install fabric tension sensors on stenter entry; alarm if tension exceeds 0.15 kN/m.
+- Conduct weekly loom inspection: check reed condition, rapier timing, and shuttle box wear.
+
+--- QUALITY STANDARD REFERENCES ---
+ASTM D5034 (breaking strength), ISO 13934-1 (tensile strength of fabrics), AQL Critical defect = zero tolerance.

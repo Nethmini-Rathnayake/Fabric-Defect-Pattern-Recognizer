@@ -1,0 +1,35 @@
+DEFECT: WEAVE DISTORTION
+CATEGORY: Structural / dimensional deformation
+SEVERITY: Medium–High (dimensional non-conformance)
+
+--- VISUAL CHARACTERISTICS ---
+Weave distortion manifests as deviation of the weft (filling) threads from perpendicularity to the warp. Bowing: weft threads curve in a bow shape across the fabric width, with the centre advanced or retarded relative to the selvedges. Skewing: weft threads are uniformly tilted at an angle to the warp. In knit fabrics, equivalent distortion is called course skew or spirality — the wales (vertical columns) rotate helically around the tube. Severity is measured as the maximum weft deviation in millimetres per metre of fabric width (target: <10 mm/m for apparel grades).
+
+--- ROOT CAUSES: LOOM TENSION IMBALANCE ---
+Warp beam tension that varies across the width is the primary cause of bowing and skewing. A tension differential of more than 5% between the left, centre, and right warp zones causes selvedge-to-centre speed differences during beat-up. Worn or misaligned back-rest rollers create uneven warp shedding angles. Uneven warp sizing (starch application) in the slashing process causes differential elongation under weaving tension.
+
+--- ROOT CAUSES: BEAM WINDING AND WARPING ---
+Improper beam winding during warping creates non-uniform yarn density across the beam width. Yarn breaks during warping that are repaired with knots cause local tension increases. Differences in yarn elongation between creel positions (outer vs inner packages) create tension gradients that persist through weaving.
+
+--- ROOT CAUSES: FINISHING AND STENTER SETTINGS ---
+Fabric that is fed into a stenter (pin or clip) at an angle enters the frame already skewed and is set permanently in that position by heat. Overstretching fabric width beyond the relaxed construction width by more than 3% causes weft thread reorientation. Uneven pin/clip penetration across the fabric width causes one selvedge to advance faster than the other. In jet dyeing machines, high liquor flow rates rotate the fabric tube, introducing spirality in knit constructions.
+
+--- ROOT CAUSES: FABRIC TAKE-UP MECHANISM ---
+Differential take-up speeds on split take-up rollers introduce bow during weaving. Slippage on one side of the take-up roller compresses weft threads on the slip side. Fabric wound too tightly on the cloth roll builds up pressure that permanently bows the inner layers.
+
+--- IMMEDIATE CORRECTIVE ACTIONS ---
+1. Stop the loom or stenter. Measure current distortion: place a steel rule perpendicular to selvedge and measure maximum weft deviation.
+2. Loom: check warp tension across width using a warp tension meter (target: uniform ±5%). Adjust back-rest position or let-off mechanism to equalise.
+3. Stenter: verify fabric entry angle with laser alignment tool. Check pin/clip spacing and penetration depth uniformity. Reduce overfeed or width setting by 1–2%.
+4. Assess whether distorted fabric can be corrected: mild bowing (<15 mm/m) may relax during sanforising. Severe skew is generally irreversible — downgrade or cut around defect zone.
+5. Log: machine ID, speed (rpm or m/min), warp tension readings, stenter temperature, width setting.
+
+--- PREVENTIVE MEASURES ---
+- Install warp tension monitoring system with automatic let-off servo control; alarm threshold ±3% variation.
+- Calibrate stenter pin-spacing jigs quarterly; replace worn pins on a rolling schedule.
+- Implement bow-and-skew detection camera at grey fabric inspection (before dyeing); reject rolls >10 mm/m distortion before downstream processing.
+- Standardise warping parameters: yarn tension per count (Ne 30 = 0.15 cN/tex), traverse speed, and beam winding density in the warping SOP.
+- For circular knit: use S/Z balanced yarn twist in alternate feeders to cancel spirality tendency.
+
+--- QUALITY STANDARD REFERENCES ---
+ISO 13015 (bow and skew in woven fabrics), AATCC TM179, Buyer AQL: typically <5 mm/m for shirt fabric, <10 mm/m for bottom-weight.

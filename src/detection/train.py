@@ -23,7 +23,7 @@ def train_epoch(model, loader, criterion, optimizer, device, scaler):
     for images, labels in tqdm(loader, desc="Train", leave=False):
         images, labels = images.to(device), labels.to(device)
         optimizer.zero_grad()
-        with torch.autocast(device_type=device.type, enabled=scaler is not None):
+        with torch.autocast(device_type="cuda", enabled=scaler is not None):
             outputs = model(images)
             loss = criterion(outputs, labels)
         if scaler:
@@ -57,14 +57,20 @@ def main(config_path: str):
     with open(config_path) as f:
         cfg = yaml.safe_load(f)
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
     checkpoint_dir = Path(cfg["output"]["checkpoint_dir"])
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
 
     train_ds = FabricDefectDataset(cfg["data"]["train_dir"], get_train_transforms(cfg["data"]["image_size"]))
     val_ds = FabricDefectDataset(cfg["data"]["val_dir"], get_val_transforms(cfg["data"]["image_size"]))
-    train_loader = DataLoader(train_ds, batch_size=cfg["training"]["batch_size"], shuffle=True, num_workers=cfg["data"]["num_workers"], pin_memory=True)
-    val_loader = DataLoader(val_ds, batch_size=cfg["training"]["batch_size"], shuffle=False, num_workers=cfg["data"]["num_workers"], pin_memory=True)
+    pin = device.type == "cuda"
+    train_loader = DataLoader(train_ds, batch_size=cfg["training"]["batch_size"], shuffle=True, num_workers=cfg["data"]["num_workers"], pin_memory=pin)
+    val_loader = DataLoader(val_ds, batch_size=cfg["training"]["batch_size"], shuffle=False, num_workers=cfg["data"]["num_workers"], pin_memory=pin)
 
     model = FabricDefectModel(
         num_classes=cfg["model"]["num_classes"],

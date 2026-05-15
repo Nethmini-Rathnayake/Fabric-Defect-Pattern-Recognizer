@@ -1,0 +1,25 @@
+============================================================
+  FABRIC DEFECT PIPELINE — LATENCY BENCHMARK
+============================================================
+
+Hardware : Apple M1
+RAM      : 9 GB
+OS       : Darwin 22.6.0
+PyTorch  : 2.11.0
+Input res: 640×480 → resized to 64×64
+Device   : CPU (no GPU / MPS)
+N samples: 180
+
+Stage                             Mean     Std     p50     p95     p99
+------------------------------------------------------------
+Load + resize (640×480)         16.96ms  28.55ms   4.13ms  38.04ms 162.75ms
+Preprocess (norm+tensor)         1.39ms   0.36ms   1.30ms   1.88ms   2.82ms
+Inference (MobileNetV3-S)       70.25ms   8.14ms  68.14ms  86.75ms 102.29ms
+Postprocess (softmax)            0.04ms   0.01ms   0.04ms   0.06ms   0.09ms
+Overlay (cv2 draw)               0.22ms   0.08ms   0.21ms   0.36ms   0.61ms
+------------------------------------------------------------
+End-to-end                      88.87ms  29.70ms  84.14ms 124.37ms 234.99ms
+
+  Effective FPS (mean latency): 11.3
+  Target: >20 FPS  →  FAIL ✗
+============================================================

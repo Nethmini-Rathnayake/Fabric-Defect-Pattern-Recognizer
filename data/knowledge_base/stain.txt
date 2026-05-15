@@ -1,0 +1,32 @@
+DEFECT: STAIN
+CATEGORY: Surface contamination
+SEVERITY: Medium–High (batch rejection risk)
+
+--- VISUAL CHARACTERISTICS ---
+Stains appear as irregular discoloured patches on the fabric surface. Colour varies with cause: dark brown/black patches indicate oil or grease; bright or uneven colour blotches indicate dye contamination; pale bleached spots indicate chemical contact. Edges are typically diffuse for liquid stains and sharp for contact stains. Size ranges from 1–2 cm spots to streaks spanning the full fabric width.
+
+--- ROOT CAUSES: MACHINE LUBRICATION ---
+Lubrication stains occur when machine oil or grease leaks from bearings, feed rollers, or guide mechanisms onto the fabric path. Needle bar bearings on knitting machines require oil every 500 operating hours; if overdue, seals crack and oil migrates to the fabric. Flat-bed frames and circular knitting machines are especially prone near the top cam plate. Detection: stains appear periodically in the same warp position, repeating at a fixed interval equal to the machine's fabric take-up cycle.
+
+--- ROOT CAUSES: DYE CONTAMINATION ---
+Dye stains result from inconsistent dyeing process control. Key parameters: dye bath temperature must remain within ±2°C of target (typically 60–65°C for reactive dyes on cotton); pH should be 10.5–11.0; liquor ratio 1:8 to 1:10. Deviation from any of these causes unlevel dye strike. Contaminated dye lots (wrong dyestuff batch mixed in) cause sharp-edged patches with strong colour contrast. Back-staining from previous lots occurs when the machine is inadequately rinsed between lots.
+
+--- ROOT CAUSES: CHEMICAL / FINISHING ---
+Chemical stains arise from contact with solvents (acetone, MEK) used for cleaning, or from auxiliary chemicals (softeners, optical brighteners) applied unevenly in finishing. Stenter frame edge-guides that hold the fabric can transfer residue from previous runs. These stains often appear as parallel stripes along fabric edges.
+
+--- IMMEDIATE CORRECTIVE ACTIONS ---
+1. Stop the production line and quarantine the affected roll immediately.
+2. Identify stain type: blot with white cloth — oily residue = lubrication stain; colour transfer = dye contamination.
+3. Lubrication stain: locate the leaking bearing or roller (use UV light if oil is fluorescent). Replace seal, clean machine path with solvent, run waste fabric before resuming.
+4. Dye stain: log dye bath temperature and pH at time of defect. Inspect dye feed pipes for blockages. Assess whether reworking (re-washing) can salvage the batch.
+5. Document defect: roll number, machine ID, meter mark, operator shift.
+
+--- PREVENTIVE MEASURES ---
+- Implement a lubrication audit log: record oil type, quantity, and date for each bearing point.
+- Install drip trays under feed rollers and inspect weekly.
+- Calibrate dye bath temperature sensors every quarter; install redundant thermocouple.
+- Enforce lot changeover rinse protocol: minimum 3 rinse cycles before new dye lot.
+- Run automated SPC (statistical process control) on dye bath pH and temperature; alarm threshold ±1°C.
+
+--- QUALITY STANDARD REFERENCES ---
+ISO 105-X12 (colour fastness to rubbing), AATCC TM8, AQL inspection level 2.5 for major defects.

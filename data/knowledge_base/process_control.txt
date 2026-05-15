@@ -1,0 +1,20 @@
+FABRIC QUALITY PROCESS CONTROL — GENERAL PRINCIPLES
+
+--- DEFECT CLASSIFICATION SYSTEM ---
+Fabric defects are classified by severity for AQL-based sampling:
+- Critical defects: holes >2 cm, severe tears, heavy contamination. Zero tolerance (AQL = 0). Immediate line stop.
+- Major defects: visible stains, weave distortion >15 mm/m, snags >2 cm. AQL 1.0.
+- Minor defects: slight shading variation, minor distortion <5 mm/m. AQL 2.5.
+The 4-point system assigns penalty points per defect per metre: 1 point (≤7.5 cm), 2 points (7.5–15 cm), 3 points (15–23 cm), 4 points (>23 cm or full-width). Maximum acceptable: 40 points per 100 linear metres.
+
+--- INSPECTION ENVIRONMENT ---
+Standard inspection conditions: D65 illuminant, 1000 lux at fabric surface, 45° fabric angle, 15–20 m/min inspection speed. Inspector fatigue is significant after 2 hours — mandatory rotation or break at 2-hour intervals. AI-assisted inspection supplements human inspection; does not replace it for first-quality grading decisions.
+
+--- STATISTICAL PROCESS CONTROL IN FABRIC INSPECTION ---
+Control charts (X-bar and R) should be maintained for GSM, width, and defect rate per roll. Process capability index Cpk target ≥1.33 for all critical parameters. When the AI system detects a defect cluster (>3 defects in 5 metres), trigger a special cause investigation before resuming production. SPC data should be reviewed at end of every shift by the quality supervisor.
+
+--- TRACEABILITY REQUIREMENTS ---
+Every defect detected by the AI system must be logged with: timestamp, roll/batch ID, machine ID, metre mark, defect class, confidence score, and operator ID who reviewed the alert. This log forms the quality record for customer complaints and internal process improvement. Retention period: minimum 2 years per ISO 9001 requirements.
+
+--- INTEGRATION WITH CORRECTIVE ACTION SYSTEM ---
+AI detections that exceed threshold frequency (>5 defects per 100 m) should automatically generate a non-conformance report (NCR) in the factory's quality management system. The NCR triggers: maintenance inspection within 4 hours, root cause analysis within 24 hours, and corrective action closure within 72 hours. Repeat defects within 30 days of NCR closure indicate inadequate corrective action — escalate to production manager.

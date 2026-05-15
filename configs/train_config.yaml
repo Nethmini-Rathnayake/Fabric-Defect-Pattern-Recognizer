@@ -1,35 +1,31 @@
 model:
-  name: efficientnet-b4
-  num_classes: 8
+  name: mobilenet-v3-small
+  num_classes: 4
   pretrained: true
   dropout: 0.3
 
 classes:
-  - oil_stain
-  - dye_stain
-  - hole_snag
-  - drop_stitch
+  - normal
+  - stain
+  - tear
   - weave_distortion
-  - slub_nep
-  - shade_variation
-  - shrinkage
 
 data:
-  train_dir: data/augmented/train
-  val_dir: data/augmented/val
-  test_dir: data/raw/test
-  image_size: 380
-  num_workers: 4
+  train_dir: data/images/train
+  val_dir: data/images/val
+  test_dir: data/images/val
+  image_size: 64
+  num_workers: 0
 
 training:
-  epochs: 50
-  batch_size: 16
+  epochs: 20
+  batch_size: 32
   learning_rate: 0.0001
   weight_decay: 0.0001
   scheduler: cosine
-  warmup_epochs: 5
-  early_stopping_patience: 10
-  mixed_precision: true
+  warmup_epochs: 3
+  early_stopping_patience: 7
+  mixed_precision: false
 
 augmentation:
   horizontal_flip: true

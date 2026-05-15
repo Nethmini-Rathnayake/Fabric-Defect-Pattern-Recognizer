@@ -1,0 +1,25 @@
+DEFECT: NORMAL (NO DEFECT)
+CATEGORY: Quality pass
+SEVERITY: None
+
+--- CHARACTERISTICS OF ACCEPTABLE FABRIC ---
+Fabric classified as normal exhibits consistent colour, uniform weave or knit structure, smooth surface, and correct dimensional stability. The warp and weft are perpendicular with no bowing or skewing. No surface contamination, broken threads, or structural damage is present.
+
+--- QUALITY ACCEPTANCE CRITERIA ---
+The following parameters define a normal fabric pass:
+- Colour uniformity: ΔE < 1.0 (CIE Lab) within roll, ΔE < 1.5 roll-to-roll
+- Bow and skew: <5 mm/m for shirting, <10 mm/m for bottom-weight
+- Fabric weight (GSM): within ±5% of specification
+- Width: within ±1 cm of specification
+- Tensile strength: ≥80% of original specification for finishing
+- Pilling resistance: Grade ≥3–4 (ISO 12945-2)
+- No holes, tears, stains, or distortions visible under standard inspection lighting (1000 lux, D65)
+
+--- WHAT NORMAL CLASSIFICATION MEANS IN PRODUCTION ---
+A normal classification from the AI system means the inspected fabric zone has passed automated visual inspection. However, automated inspection is a supplementary tool — it does not replace end-of-roll AQL inspection or laboratory physical testing. Normal-classified fabric should still proceed to the standard inspection table check before dispatch.
+
+--- ACTIONS ON NORMAL CLASSIFICATION ---
+1. Continue production at current settings.
+2. Log inspection result with timestamp, roll number, and metre mark.
+3. At end of roll, perform standard AQL 2.5 visual inspection.
+4. If overall defect rate is zero for >3 consecutive rolls, note process stability in the SPC control chart.

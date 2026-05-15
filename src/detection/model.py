@@ -4,28 +4,21 @@ from torchvision import models
 
 
 DEFECT_CLASSES = [
-    "oil_stain",
-    "dye_stain",
-    "hole_snag",
-    "drop_stitch",
+    "normal",
+    "stain",
+    "tear",
     "weave_distortion",
-    "slub_nep",
-    "shade_variation",
-    "shrinkage",
 ]
 
 
 class FabricDefectModel(nn.Module):
-    def __init__(self, num_classes: int = 8, pretrained: bool = True, dropout: float = 0.3):
+    def __init__(self, num_classes: int = 4, pretrained: bool = True, dropout: float = 0.3):
         super().__init__()
-        self.backbone = models.efficientnet_b4(
-            weights=models.EfficientNet_B4_Weights.DEFAULT if pretrained else None
+        self.backbone = models.mobilenet_v3_small(
+            weights=models.MobileNet_V3_Small_Weights.DEFAULT if pretrained else None
         )
-        in_features = self.backbone.classifier[1].in_features
-        self.backbone.classifier = nn.Sequential(
-            nn.Dropout(p=dropout),
-            nn.Linear(in_features, num_classes),
-        )
+        in_features = self.backbone.classifier[3].in_features
+        self.backbone.classifier[3] = nn.Linear(in_features, num_classes)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.backbone(x)
